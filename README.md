@@ -1,4 +1,4 @@
-# clinica-virtual
+# clinica-virtual 🏥
 
 ## Project setup
 ```
