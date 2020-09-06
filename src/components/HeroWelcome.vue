@@ -7,7 +7,7 @@
       <div class="container">
         <h2 class="title">Bienvenido</h2>
         <h2 class="title">Clinica Online Pirulo</h2>
-        <b-button size="is-medium is-success" @click="solicitarTurno"
+        <b-button size="is-medium is-primary" @click="solicitarTurno"
           >Sacar turno</b-button
         >
       </div>

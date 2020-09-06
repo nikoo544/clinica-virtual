@@ -1,5 +1,5 @@
 <template>
-  <b-navbar class="is-info">
+  <b-navbar class="is-link">
     <template slot="brand">
       <b-navbar-item tag="router-link" :to="{ path: '/' }">
         <img src="@/assets/3209049.svg" alt="Clinica Logo" />
@@ -10,7 +10,9 @@
     </template>
     <template slot="start">
       <b-navbar-item tag="router-link" :to="{ path: '/' }">Home</b-navbar-item>
-      <b-navbar-item href="#servicio">Nuestros Servicios</b-navbar-item>
+      <b-navbar-item tag="router-link" :to="{ path: '/' }"
+        >Servicios</b-navbar-item
+      >
       <b-navbar-item tag="router-link" :to="{ path: '/institucional' }"
         >Institucional</b-navbar-item
       >
@@ -22,11 +24,12 @@
     <template slot="end">
       <b-navbar-item tag="div">
         <div class="buttons">
-          <a class="button is-success">
+          <a class="button is-primary">
             <strong>Registrarse</strong>
           </a>
-
-          <a class="button is-light">Ingresar</a>
+          <router-link to="/login" tag="button" class="button is-light"
+            >Ingresar</router-link
+          >
         </div>
       </b-navbar-item>
     </template>

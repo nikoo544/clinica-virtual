@@ -33,4 +33,15 @@ body {
   transform: scale(1.5);
 }
 
+.logoclinic {
+  font-size: 120px;
+}
 
+.flip3d {
+  transition: transform 1s;
+}
+
+.flip3d:hover {
+  transform: rotateY(180deg);
+  transition: transform 1s;
+}

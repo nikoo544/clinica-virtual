@@ -1,5 +1,5 @@
 <template>
-  <footer class="footer hero is-info">
+  <footer class="footer hero is-link">
     <section class>
       <div class="hero-body">
         <div class="tile is-ancestor">
