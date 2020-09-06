@@ -4,6 +4,7 @@ import router from "./router";
 import Buefy from "buefy";
 import "buefy/dist/buefy.css";
 import "@/assets/css/stylex.css";
+import "@/assets/css/mystyles.css";
 
 Vue.use(Buefy);
 Vue.config.productionTip = false;

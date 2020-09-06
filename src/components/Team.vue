@@ -1,5 +1,6 @@
 <template>
-  <section class="hero is-light is-medium">
+  <section class="hero is-light is-medium " name="casa">
+    <a name="servicio"></a>
     <div class="hero-body">
       <div class="container">
         <h1 class="title">

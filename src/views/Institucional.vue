@@ -1,26 +1,23 @@
 <template>
   <div class="home">
-    <hero-welcome></hero-welcome>
-    <separator></separator>
-    <team></team>
     <barra-institucional></barra-institucional>
+    <historia></historia>
+    <team></team>
   </div>
 </template>
 
 <script>
 // @ is an alias to /src
-import HeroWelcome from "@/components/HeroWelcome.vue";
-import Separator from "@/components/Separator.vue";
-import Team from "@/components/Team.vue";
 import BarraInstitucional from "@/components/Institucional/BarraInstitucional.vue";
+import Historia from "@/components/Institucional/Historia.vue";
+import Team from "@/components/Team.vue";
 
 export default {
-  name: "Home",
+  name: "Institucional",
   components: {
-    HeroWelcome,
-    Separator,
-    Team,
     BarraInstitucional,
+    Historia,
+    Team,
   },
 };
 </script>

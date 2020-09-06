@@ -68,27 +68,28 @@
                       width="32"
                       class="imgtext grow"
                     />
-                    <span class="subtitle pl-3">atencion@clinica.com</span>
+                    <span class="subtitle pl-3">rrhh@pirulo.com</span>
                   </span>
                 </span>
               </div>
             </article>
           </div>
-          <div class="tile is-parent">
+          <!-- <div class="tile is-parent">
             <article class="tile is-child box">
               <p class="title">Four</p>
               <p class="subtitle">Subtitle</p>
             </article>
-          </div>
+          </div> -->
         </div>
         <div class="container"></div>
       </div>
       <div class="content is-info mgb-small">
-        <p>
-          Made with
-          <b-tooltip label="Love 🤍" type="is-danger">🍰</b-tooltip>&nbsp;by&nbsp;
-          <span class="rohanx">Rohan</span>
-        </p>
+        <b-tooltip label="Love 🤍" type="is-danger">
+          <p>
+            Made with 🍰&nbsp;by&nbsp;
+            <span class="rohanx">Rohan</span>
+          </p>
+        </b-tooltip>
       </div>
     </section>
   </footer>
@@ -96,6 +97,6 @@
 
 <script>
 export default {
-  name: "PieDePagina"
+  name: "PieDePagina",
 };
 </script>

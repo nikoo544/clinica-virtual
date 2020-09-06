@@ -19,8 +19,8 @@ export default {
   name: "App",
   components: {
     NavigationBar,
-    PieDePagina
-  }
+    PieDePagina,
+  },
 };
 </script>
 

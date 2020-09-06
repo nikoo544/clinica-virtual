@@ -7,7 +7,9 @@
       <div class="container">
         <h2 class="title">Bienvenido</h2>
         <h2 class="title">Clinica Online Pirulo</h2>
-        <b-button size="is-medium is-success" @click="solicitarTurno">Sacar turno</b-button>
+        <b-button size="is-medium is-success" @click="solicitarTurno"
+          >Sacar turno</b-button
+        >
       </div>
     </div>
   </section>
@@ -25,9 +27,9 @@ export default {
           "🤹‍♂️ Esta función se encuentra en desarrollo 🤹‍♂️<br>Nota: <em> 🍕🍔🍟🌭🍿🧂🥓🍗🍖🥩</em>.",
         type: "is-warning",
         actionText: "Cerrar 🦄",
-        queue: false
+        queue: false,
       });
-    }
-  }
+    },
+  },
 };
 </script>
