@@ -1,26 +1,17 @@
 <template>
   <div id="app">
-    <navigation-bar></navigation-bar>
-
     <!-- <div id="nav">
        <router-link to="/">Home</router-link> |
       <router-link to="/about">About</router-link> 
     </div>-->
     <router-view />
-    <pie-de-pagina></pie-de-pagina>
   </div>
 </template>
 
 <script>
-import NavigationBar from "./components/NavigationBar.vue";
-import PieDePagina from "./components/PieDePagina.vue";
-
 export default {
   name: "App",
-  components: {
-    NavigationBar,
-    PieDePagina,
-  },
+  components: {},
 };
 </script>
 
