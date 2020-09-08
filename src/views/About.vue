@@ -5,10 +5,10 @@
       <div class="hero-body">
         <div class="container">
           <h1 class="title">
-            Medium title
+            Contacto
           </h1>
           <h2 class="subtitle">
-            Medium subtitle
+            Información
           </h2>
         </div>
       </div>

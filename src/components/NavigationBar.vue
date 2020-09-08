@@ -24,10 +24,10 @@
     <template slot="end">
       <b-navbar-item tag="div">
         <div class="buttons">
-          <a class="button is-primary">
+          <a class="button is-success">
             <strong>Registrarse</strong>
           </a>
-          <router-link to="/login" tag="button" class="button is-light"
+          <router-link to="/login" tag="button" class="button is-ligth"
             >Ingresar</router-link
           >
         </div>

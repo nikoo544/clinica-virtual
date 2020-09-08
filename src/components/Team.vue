@@ -7,7 +7,7 @@
         <div class="tile is-ancestor">
           <servicio title="Odontología" logo="🦷"></servicio>
           <servicio title="Nutrición" logo="🍏"></servicio>
-          <servicio title="Oftalmología" logo="😎"></servicio>
+          <servicio title="Oftalmología" logo="👁‍🗨"></servicio>
           <!-- <servicio title="Dermatologo" urlx="🌝"></servicio> -->
           <servicio title="Kinesiología" logo="🦴"></servicio>
         </div>

@@ -5,7 +5,9 @@
         <div class="container">
           <div class="navbar-brand">
             <a class="navbar-item">
-              <h1 class="title">Clínica Pirulo</h1>
+              <h1 class="title is-family-sans-serif	has-text-weight-bold">
+                Clínica Pirulo
+              </h1>
             </a>
             <span class="navbar-burger burger" data-target="navbarMenuHeroC">
               <span></span>
@@ -19,7 +21,7 @@
                 <router-link
                   to="/"
                   tag="button"
-                  class="button is-dark is-pulled-right"
+                  class="button is-ligth is-pulled-right"
                   >Volver al inicio</router-link
                 >
               </span>

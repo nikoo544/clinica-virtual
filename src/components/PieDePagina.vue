@@ -87,7 +87,9 @@
         <b-tooltip label="Love 🤍" type="is-danger">
           <p>
             Made with 🍰&nbsp;by&nbsp;
-            <span class="rohanx">Rohan</span>
+            <a href="https://steamcommunity.com/id/nikoo544/" class="rohanx"
+              >Rohan</a
+            >
           </p>
         </b-tooltip>
       </div>

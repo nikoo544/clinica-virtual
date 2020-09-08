@@ -5,6 +5,7 @@ node_modules
 .firebaserc
 firebase.json
 mystyles.css
+main.js
 # local env files
 .env.local
 .env.*.local

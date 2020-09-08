@@ -12,13 +12,20 @@ body {
 .text-footer {
   background-color: blueviolet;
 }
-
+.rohanx {
+  color: white;
+}
 .rohanx:hover {
   color: deeppink;
 }
 
 .imgtext {
   vertical-align: middle;
+}
+
+.svgcolor {
+  filter: invert(86%) sepia(100%) saturate(0%) hue-rotate(32deg)
+    brightness(112%) contrast(101%);
 }
 
 .contact {
@@ -44,4 +51,14 @@ body {
 .flip3d:hover {
   transform: rotateY(180deg);
   transition: transform 1s;
+}
+
+.footerbot {
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+}
+
+.footer {
+  background-color: hsl(204, 86%, 53%);
 }
