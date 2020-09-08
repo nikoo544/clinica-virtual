@@ -24,9 +24,16 @@
     <template slot="end">
       <b-navbar-item tag="div">
         <div class="buttons">
-          <a class="button is-success">
-            <strong>Registrarse</strong>
-          </a>
+          <b-tooltip
+            type="is-light"
+            position="is-bottom"
+            :triggers="['click']"
+            :auto-close="['outside', 'escape']"
+          >
+            <template v-slot:content> <h1>Work in progress 🧙‍♂️</h1> </template>
+
+            <b-button type="is-success mr-2"> Registrarse</b-button>
+          </b-tooltip>
           <router-link to="/login" tag="button" class="button is-ligth"
             >Ingresar</router-link
           >

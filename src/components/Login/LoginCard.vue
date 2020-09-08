@@ -37,7 +37,15 @@
         </span>
       </div>
       <div class="field">
-        <b-button type="is-success"> Registrarse</b-button>
+        <b-tooltip
+          type="is-light"
+          :triggers="['click']"
+          :auto-close="['outside', 'escape']"
+        >
+          <template v-slot:content> <h1>Work in progress 🧙‍♂️</h1> </template>
+
+          <b-button type="is-success"> Registrarse</b-button>
+        </b-tooltip>
         <button class="button is-info  ml-3">
           Ingresar
         </button>
@@ -46,7 +54,7 @@
         <label for="" class="label is-pulled-left is-inline-block"
           >Inicia sesión con:</label
         >
-        <b-button type="is-danger" expanded>
+        <b-button @click="loginGoogle" type="is-danger" expanded>
           <img
             src="@/assets/img/redes/google.svg"
             alt=""
@@ -55,7 +63,7 @@
           />
           Continuar con Google</b-button
         >
-        <b-button type="is-link" expanded
+        <b-button @click="loginFacebook" type="is-link" expanded
           ><img
             src="@/assets/img/redes/facebook.svg"
             alt=""
@@ -91,7 +99,7 @@
 </script>
 
 <script>
-import firebase from "firebase";
+import firebase, { auth } from "firebase";
 
 export default {
   data() {
@@ -104,16 +112,36 @@ export default {
     };
   },
   methods: {
+    // Métodos de Logueo
+
+    async loginGoogle() {
+      try {
+        const provider = new firebase.auth.GoogleAuthProvider();
+        const user = await firebase.auth().signInWithPopup(provider);
+        console.log(user);
+        this.$router.replace({ name: "Dashboard" });
+      } catch (error) {
+        console.error(error.message);
+      }
+    },
+    async loginFacebook() {
+      try {
+        const provider = new firebase.auth.FacebookAuthProvider();
+        const user = await firebase.auth().signInWithPopup(provider);
+        console.log(user);
+        this.$router.replace({ name: "Dashboard" });
+      } catch (error) {
+        console.error(error.message);
+      }
+    },
     submit() {
       firebase
         .auth()
         .signInWithEmailAndPassword(this.form.email, this.form.password)
         .then((data) => {
-          console.log("conectado");
           this.$router.replace({ name: "Dashboard" });
         })
         .catch((err) => {
-          console.log("hola");
           this.error = err.message;
         });
     },

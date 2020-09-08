@@ -19,13 +19,10 @@
 
 //
 <script>
-// // @ is an alias to /src
-// import Team from "@/components/Team.vue";
 import NavigationBar from "@/components/NavigationBar.vue";
 import PieDePagina from "@/components/PieDePagina.vue";
 
 export default {
-  //   name: "Home",
   components: {
     NavigationBar,
     PieDePagina,
