@@ -3,7 +3,7 @@
 Es una aplicación web que permite a los clientes de una clínica reservar turnos. Estos son visualizados y administrados por un médico o la persona encargada de la administración.
 La página inicial permite a la institucion mostrar los servicios que ofrece y la información de contacto.
 
-# Módulos y funcionalidades
+# Módulos y funcionalidades 🤖
 
 | Módulo | Descripción | Estado |
 | --- | --- | -- |
@@ -13,7 +13,6 @@ La página inicial permite a la institucion mostrar los servicios que ofrece y l
 | Administrador | Gestión horario y calendario, gestión de usuarios, administración y configuración de parámetros. | En desarrollo |
 
 # Herramientas utilizadas 🔧
-
 
   - Vue.js
   - Vue CLI
