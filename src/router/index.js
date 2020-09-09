@@ -4,6 +4,7 @@ import Home from "../views/Home.vue";
 import Institucional from "@/views/Institucional.vue";
 import Error from "@/views/Error.vue";
 import Login from "@/views/Login.vue";
+import Servicios from "@/views/Servicios.vue";
 import Dashboard from "@/views/Dashboard.vue";
 import firebase from "firebase";
 
@@ -16,10 +17,16 @@ const routes = [
     component: Home,
   },
   {
+    path: "/servicios",
+    name: "Servicios",
+    component: Servicios,
+  },
+  {
     path: "/institucional",
     name: "Institucional",
     component: Institucional,
   },
+
   {
     path: "/about",
     name: "About",
@@ -63,6 +70,7 @@ const PAGE_TITLE = {
   Dashboard: "Dashboard | Clínica Pirulo",
   Login: "Login | Clínica Pirulo",
   Institucional: "Institucional | Clínica Pirulo",
+  Servicios: "Servicios | Clínica Pirulo",
 };
 
 router.beforeEach((to, from, next) => {

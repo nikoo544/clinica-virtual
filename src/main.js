@@ -11,7 +11,7 @@ Vue.use(Buefy);
 Vue.config.productionTip = false;
 
 const firebaseConfig = {
-//CONFIGURACION FIREBASE
+  //CONFIGURACION FIREBASE
 };
 
 firebase.initializeApp(firebaseConfig);
