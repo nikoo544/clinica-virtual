@@ -55,10 +55,10 @@ body {
 
 .footerbot {
   width: 100%;
-  position: fixed;
+  position: absolute;
   bottom: 0;
 }
 
 .footer {
-  background-color: hsl(204, 86%, 53%);
+  background-color: hsl(217, 71%, 53%);
 }

@@ -1,70 +1,49 @@
 <template>
-  <nav class="navbar is-info" role="navigation" aria-label="main navigation">
-    <div class="navbar-brand">
-      <a class="navbar-item">
-        <h1 class="title has-text-white">Clínica Pirulo</h1>
-      </a>
-
-      <a
-        role="button"
-        class="navbar-burger burger"
-        aria-label="menu"
-        aria-expanded="false"
-        data-target="navbarBasicExample"
+  <b-navbar class="is-link">
+    <template slot="brand">
+      <b-navbar-item tag="router-link" :to="{ path: '/' }">
+        <img src="@/assets/3209049.svg" alt="Clinica Logo" />
+        <p class="has-text-weight-bold">
+          Clinica Pirulo
+        </p>
+      </b-navbar-item>
+    </template>
+    <template slot="start">
+      <b-navbar-item tag="router-link" :to="{ path: '/' }">Home</b-navbar-item>
+      <b-navbar-item tag="router-link" :to="{ path: '/' }"
+        >Pacientes</b-navbar-item
       >
-        <span aria-hidden="true"></span>
-        <span aria-hidden="true"></span>
-        <span aria-hidden="true"></span>
-      </a>
-    </div>
+      <b-navbar-item tag="router-link" :to="{ path: '/' }"
+        >Turnos</b-navbar-item
+      >
+      <b-navbar-item tag="router-link" :to="{ path: '/' }"
+        >Calendario</b-navbar-item
+      >
+      <b-navbar-item tag="router-link" :to="{ path: '/' }"
+        >Médico</b-navbar-item
+      >
+    </template>
 
-    <div id="navbarBasicExample" class="navbar-menu">
-      <div class="navbar-start">
-        <a class="navbar-item">
-          Pacientes
-        </a>
+    <template slot="end">
+      <b-navbar-item tag="div">
+        <div class="buttons">
+          <b-tooltip
+            type="is-light"
+            position="is-bottom"
+            :triggers="['click']"
+            :auto-close="['outside', 'escape']"
+          >
+            <template v-slot:content> <h1>Work in progress 🧙‍♂️</h1> </template>
 
-        <a class="navbar-item">
-          Turnos
-        </a>
-
-        <div class="navbar-item has-dropdown is-hoverable">
-          <a class="navbar-link">
-            Random
+            <b-button type="is-success mr-2"> Mi Perfil</b-button>
+          </b-tooltip>
+          <a class="button is-light" @click="logout">
+            Cerrar sesión
           </a>
-
-          <div class="navbar-dropdown">
-            <a class="navbar-item">
-              Place holder
-            </a>
-            <a class="navbar-item">
-              Place holder
-            </a>
-            <a class="navbar-item">
-              Place holder
-            </a>
-            <hr class="navbar-divider" />
-            <a class="navbar-item">
-              Reportar un problema
-            </a>
-          </div>
         </div>
-      </div>
-
-      <div class="navbar-end">
-        <div class="navbar-item">
-          <div class="buttons">
-            <a class="button is-primary">
-              <strong>Mi Perfil</strong>
-            </a>
-            <a class="button is-light" @click="logout">
-              Cerrar sesión
-            </a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </nav>
+      </b-navbar-item>
+    </template>
+  </b-navbar>
 </template>
 
 <script>

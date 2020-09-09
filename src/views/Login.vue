@@ -1,35 +1,29 @@
 <template>
-  <div class="hero is-fullheight is-info is-bold">
-    <div class="hero-head">
-      <header class="navbar">
-        <div class="container">
-          <div class="navbar-brand">
-            <a class="navbar-item">
-              <h1 class="title is-family-sans-serif	has-text-weight-bold">
-                Clínica Pirulo
-              </h1>
-            </a>
-            <span class="navbar-burger burger" data-target="navbarMenuHeroC">
-              <span></span>
-              <span></span>
-              <span></span>
-            </span>
+  <div class="hero is-fullheight is-link is-bold">
+    <b-navbar class="is-link">
+      <template slot="brand">
+        <b-navbar-item tag="router-link" :to="{ path: '/' }">
+          <img src="@/assets/3209049.svg" alt="Clinica Logo" />
+          <p class="has-text-weight-bold">
+            Clinica Pirulo
+          </p>
+        </b-navbar-item>
+      </template>
+
+      <template slot="end">
+        <b-navbar-item tag="div">
+          <div class="buttons">
+            <router-link
+              to="/"
+              tag="button"
+              class="button is-ligth is-pulled-right"
+              >Volver al inicio</router-link
+            >
           </div>
-          <div id="navbarMenuHeroC" class="navbar-menu">
-            <div class="navbar-end">
-              <span class="navbar-item ">
-                <router-link
-                  to="/"
-                  tag="button"
-                  class="button is-ligth is-pulled-right"
-                  >Volver al inicio</router-link
-                >
-              </span>
-            </div>
-          </div>
-        </div>
-      </header>
-    </div>
+        </b-navbar-item>
+      </template>
+    </b-navbar>
+
     <div class="hero-body">
       <div class="container has-text-centered">
         <div class="column is-8 is-offset-2">

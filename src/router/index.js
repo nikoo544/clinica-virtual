@@ -57,7 +57,7 @@ router.afterEach((toRoute) => {
 });
 
 const PAGE_TITLE = {
-  Home: "Clinica Pirulo",
+  Home: "Clínica Pirulo",
   About: "Contacto | Clínica Pirulo",
   Error: "Página no encontrada | Clínica Pirulo",
   Dashboard: "Dashboard | Clínica Pirulo",

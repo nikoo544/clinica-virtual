@@ -1,5 +1,5 @@
 <template>
-  <footer class="footer">
+  <footer class="footer footerbot">
     <div class="content has-text-centered has-text-white">
       <b-tooltip label="Love 🤍" type="is-danger">
         <p>
