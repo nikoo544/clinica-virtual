@@ -6,15 +6,11 @@ import "buefy/dist/buefy.css";
 import "@/assets/css/stylex.css";
 import "@/assets/css/mystyles.css";
 import firebase from "firebase";
+// Para hacerlo andar hay que agregar este archivo con la key
+import "@/firebase.js";
 
 Vue.use(Buefy);
 Vue.config.productionTip = false;
-
-const firebaseConfig = {
-  //CONFIGURACION FIREBASE
-};
-
-firebase.initializeApp(firebaseConfig);
 
 // eslint-disable-next-line no-unused-vars
 firebase.auth().onAuthStateChanged(function(user) {
