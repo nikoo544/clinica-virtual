@@ -4,7 +4,7 @@
       <b-navbar-item tag="router-link" :to="{ path: '/' }">
         <img src="@/assets/3209049.svg" alt="Clinica Logo" />
         <p class="has-text-weight-bold">
-          Clinica Pirulo
+          Clinica Virtual
         </p>
       </b-navbar-item>
     </template>

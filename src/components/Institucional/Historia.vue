@@ -10,7 +10,7 @@
             class="title mb-0
           "
           >
-            Clinica Pirulo
+            Clinica Virtual
           </p>
           <section class="section has-text-left">
             <div class="container subtitle">

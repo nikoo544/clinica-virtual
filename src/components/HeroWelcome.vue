@@ -6,7 +6,7 @@
     <div class="hero-body has-bg-img">
       <div class="container">
         <h2 class="title">Bienvenido</h2>
-        <h2 class="title">Clínica Online Pirulo</h2>
+        <h2 class="title">Clínica Online Virtual</h2>
         <b-button size="is-medium is-success" @click="solicitarTurno"
           >Sacar turno</b-button
         >

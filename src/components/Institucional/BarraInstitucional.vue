@@ -2,7 +2,7 @@
   <body>
     <section class="section">
       <div class="container">
-        <h1 class="title">La Institucion</h1>
+        <h1 class="title">La Institución</h1>
         <h2 class="subtitle mt-2">
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad
           cupiditate velit ipsam nemo nesciunt doloremque id cumque tempora

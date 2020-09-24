@@ -13,7 +13,7 @@
       <b-navbar-item tag="router-link" :to="{ path: '/' }"
         >Pacientes</b-navbar-item
       >
-      <b-navbar-item tag="router-link" :to="{ path: '/' }"
+      <b-navbar-item tag="router-link" :to="{ path: '/turnos' }"
         >Turnos</b-navbar-item
       >
       <b-navbar-item tag="router-link" :to="{ path: '/' }"

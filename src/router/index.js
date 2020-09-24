@@ -6,6 +6,7 @@ import Error from "@/views/Error.vue";
 import Login from "@/views/Login.vue";
 import Servicios from "@/views/Servicios.vue";
 import Dashboard from "@/views/Dashboard.vue";
+import Turnos from "@/views/Turnos.vue";
 import firebase from "firebase";
 
 Vue.use(VueRouter);
@@ -42,6 +43,14 @@ const routes = [
     },
   },
   {
+    path: "/turnos",
+    name: "Turnos",
+    component: Turnos,
+    meta: {
+      autentificado: true,
+    },
+  },
+  {
     path: "/login",
     name: "Login",
     component: Login,
@@ -64,13 +73,13 @@ router.afterEach((toRoute) => {
 });
 
 const PAGE_TITLE = {
-  Home: "Clínica Pirulo",
-  About: "Contacto | Clínica Pirulo",
-  Error: "Página no encontrada | Clínica Pirulo",
-  Dashboard: "Dashboard | Clínica Pirulo",
-  Login: "Login | Clínica Pirulo",
-  Institucional: "Institucional | Clínica Pirulo",
-  Servicios: "Servicios | Clínica Pirulo",
+  Home: "Clínica Virtual",
+  About: "Contacto | Clínica Virtual",
+  Error: "Página no encontrada | Clínica Virtual",
+  Dashboard: "Dashboard | Clínica Virtual",
+  Login: "Login | Clínica Virtual",
+  Institucional: "Institucional | Clínica Virtual",
+  Servicios: "Servicios | Clínica Virtual",
 };
 
 router.beforeEach((to, from, next) => {
